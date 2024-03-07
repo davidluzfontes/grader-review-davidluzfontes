@@ -1,5 +1,5 @@
-CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
-RUNPATH='.:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore'
+CPATH='.;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar'
+RUNPATH='.;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore'
 
 rm -rf student-submission
 rm -rf grading-area
@@ -46,7 +46,7 @@ echo Total
 TOTAL=$( cut -d' ' -f 3 test-result.txt | cut -d',' -f 1 )
 
 SUCESSES=$((TOTAL - ERRORS))
-echo "Your score is $SUCESSES / $TOTAL"
+echo "GRADE: $SUCESSES / $TOTAL"
 # echo $FAILS
 # exit 0
 # Draw a picture/take notes on the directory structure that's set up after
