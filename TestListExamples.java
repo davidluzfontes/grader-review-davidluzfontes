@@ -11,6 +11,12 @@ class IsMoon implements StringChecker {
 }
 
 public class TestListExamples {
+
+  @Test(timeout = 500)
+  public void pointsForCompiling() {
+    assertTrue(true);
+  }
+
   @Test(timeout = 500)
   public void testMergeRightEnd() {
     List<String> left = Arrays.asList("a", "b", "c");
